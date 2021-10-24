@@ -28,7 +28,6 @@ export const AppRouter = () => {
         return (<h5>Espere...</h5>);
     }
 
-    console.log({ uid })
 
     return (
         <Router>

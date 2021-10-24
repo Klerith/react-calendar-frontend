@@ -36,7 +36,6 @@ export const CalendarScreen = () => {
 
 
     const onDoubleClick = (e) => {
-        // console.log(e);
         dispatch( uiOpenModal() );
     }
 
@@ -50,7 +49,6 @@ export const CalendarScreen = () => {
     }
 
     const onSelectSlot = (e) => {
-        // console.log(e)
         dispatch( eventClearActiveEvent() );
     }
 

@@ -14,15 +14,13 @@ export const eventStartAddNew = ( event ) => {
             const resp = await fetchConToken('events', event, 'POST');
             const body = await resp.json();
 
-            console.log(body)
-
             if ( body.ok ) {
                 event.id = body.evento.id;
                 event.user = {
                     _id: uid,
                     name: name
                 }
-                console.log( event );
+
                 dispatch( eventAddNew( event ) );
             }
 
