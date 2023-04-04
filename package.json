@@ -10,6 +10,7 @@
     "react": "^17.0.2",
     "react-big-calendar": "^0.38.0",
     "react-datetime-picker": "^3.0.2",
+    "react-detect-offline": "^2.4.5",
     "react-dom": "^17.0.2",
     "react-modal": "^3.11.2",
     "react-redux": "^7.2.0",
@@ -17,25 +18,14 @@
     "react-scripts": "4.0.3",
     "redux": "^4.0.5",
     "redux-thunk": "^2.3.0",
-    "sweetalert2": "^11.1.9",
-    "workbox-background-sync": "^6.5.4",
-    "workbox-broadcast-update": "^6.5.4",
-    "workbox-cacheable-response": "^6.5.4",
-    "workbox-core": "^6.5.4",
-    "workbox-expiration": "^6.5.4",
-    "workbox-google-analytics": "^6.5.4",
-    "workbox-navigation-preload": "^6.5.4",
-    "workbox-precaching": "^6.5.4",
-    "workbox-range-requests": "^6.5.4",
-    "workbox-routing": "^6.5.4",
-    "workbox-strategies": "^6.5.4",
-    "workbox-streams": "^6.5.4"
+    "sweetalert2": "^11.1.9"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && npm run PWA",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "PWA": "workbox injectManifest"
   },
   "eslintConfig": {
     "extends": "react-app"
